@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
@@ -26,10 +26,12 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 425px;
+    max-width: 450px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0.063rem 0.063rem 3.125rem rgba(31, 47, 86, 0.12), 0 0.063rem 0.125rem rgba(31, 47, 86, 0.24);
+    /* box-shadow: 0 0.875rem 1.75rem rgba(31, 47, 86, 0.25), 0 0.625rem 0.625rem rgba(31, 47, 86, 0.22); */
 }
 
 img {
@@ -37,30 +39,36 @@ img {
 }
 
 .text-content {
-    padding: 7%;
+    /* padding: 32px; */
+    padding-top: 40px;
+    padding-right: 47.200px;
+    padding-bottom: 47.200px;
+    padding-left: 47.200px;
     text-align: center;
 }
 
 .title {
     color: hsl(223, 47%, 23%);
     font-weight: 900;
-    font-size: 32px;
-    margin-bottom: 16px;
+    font-size: 1.75rem;
 }
 
 .text-content p.subtitle {
     color: #8a8a8a;
-    margin-bottom: 24px;
-    line-height: 1.5;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    line-height: 1.6;
 }
 
 .plan-box {
     background-color: hsl(225, 100%, 98%);
     border-radius: 12px;
     display: flex;
-    padding: 25px;
+    padding: 24px 24px;
     align-items: center;
     justify-content: space-between;
+    line-height: 1.25;
+    gap: 1.25rem
 }
 
 .plan-box-icon {
@@ -68,26 +76,31 @@ img {
     align-items: center;
     text-align: left;
     justify-content: space-around;
+
 }
 
-.plan-box-icon div {
+.plan-box-icon .plan-box-content {
     margin-left: 20px;
 }
 
-.plan-box-icon div h5 {
+.plan-box-icon .plan-box-content h2 {
     font-weight: 900;
-    font-size: 15px;
     color: hsl(223, 47%, 23%);
-    padding-bottom: 8px;
 }
 
-.plan-box-icon div p {
-    font-size: 14px;
+.plan-box-icon .plan-box-content p {
+    font-size: 1.025rem;
     color: #8a8a8a;
+}
+
+.plan-box-content {
+    flex-grow: 1;
+    text-align: left;
 }
 
 .plan-box a {
     font-weight: 700;
+    font-size: 14px;
     color: hsl(245, 75%, 52%);
 
 }
@@ -103,15 +116,16 @@ a.proceed-btn {
     color: white;
     font-weight: 700;
     background-color: hsl(245, 75%, 52%);
-    padding: 20px 0;
     border-radius: 12px;
+    padding: 15.2px 24px;
     margin: 30px 0;
     transition: background-color .3s ease;
+    box-shadow: 0 0.875rem 1.75rem rgba(31, 47, 86, 0.13), 0 0.625rem 0.625rem rgba(31, 47, 86, 0.18);
 }
 
 a.proceed-btn:hover {
     background-color: #766cea;
-    box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.875rem 1.75rem rgba(31, 47, 86, 0.25), 0 0.625rem 0.625rem rgba(31, 47, 86, 0.22);
 }
 
 a.cancel-btn {
@@ -162,20 +176,37 @@ a.cancel-btn:hover {
     }
 }
 
-.footer {
+@media screen and (min-width: 89.9375em) {
+    .card-order {
+      max-width: 28.125rem;
+    }
+    .card-order__content {
+      padding: 2.5rem 2.95rem 2.95rem 2.95rem;
+    }
+    .card-order__title {
+      font-size: 1.75rem;
+    }
+    .card-order__plan {
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+    .card-order .btn--primary {
+      margin: 1.875rem 0;
+    }
+  }
+
+footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    bottom: 0.325rem;
     width: 100%;
-    text-align: center;
-    margin-bottom: 16px;
 }
 
 .attribution {
-    font-size: 11px;
+    margin-block: 0.5rem;
+    font-size: 0.735rem;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(245deg, 75%, 52%);
 }
