@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem 1.55rem;
 }
 
 .container {
@@ -83,12 +84,12 @@ img {
     margin-left: 20px;
 }
 
-.plan-box-icon .plan-box-content h2 {
+.plan-box-content h2 {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
 }
 
-.plan-box-icon .plan-box-content p {
+.plan-box-content p {
     font-size: 1.025rem;
     color: #8a8a8a;
 }
@@ -178,22 +179,26 @@ a.cancel-btn:hover {
 
 @media screen and (min-width: 89.9375em) {
     .card-order {
-      max-width: 28.125rem;
+        max-width: 28.125rem;
     }
+
     .card-order__content {
-      padding: 2.5rem 2.95rem 2.95rem 2.95rem;
+        padding: 2.5rem 2.95rem 2.95rem 2.95rem;
     }
+
     .card-order__title {
-      font-size: 1.75rem;
+        font-size: 1.75rem;
     }
+
     .card-order__plan {
-      line-height: 1.6;
-      padding: 1.5rem;
+        line-height: 1.6;
+        padding: 1.5rem;
     }
+
     .card-order .btn--primary {
-      margin: 1.875rem 0;
+        margin: 1.875rem 0;
     }
-  }
+}
 
 footer {
     position: fixed;
