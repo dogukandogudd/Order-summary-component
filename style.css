@@ -8,18 +8,22 @@
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    min-height: 100vh;
-    background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: hsl(225, 100%, 94%);
-    position: relative;
     font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     padding: 1rem 1.55rem;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    /* position: relative; */
+    
+    
+  
 }
 
 .container {
@@ -27,7 +31,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 450px;
+    max-width: 402px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -40,11 +44,11 @@ img {
 }
 
 .text-content {
-    /* padding: 32px; */
-    padding-top: 40px;
+    padding: 32px;
+    /* padding-top: 40px;
     padding-right: 47.200px;
     padding-bottom: 47.200px;
-    padding-left: 47.200px;
+    padding-left: 47.200px; */
     text-align: center;
 }
 
@@ -65,7 +69,7 @@ img {
     background-color: hsl(225, 100%, 98%);
     border-radius: 12px;
     display: flex;
-    padding: 24px 24px;
+    padding: 16px 16px;
     align-items: center;
     justify-content: space-between;
     line-height: 1.25;
@@ -119,7 +123,7 @@ a.proceed-btn {
     background-color: hsl(245, 75%, 52%);
     border-radius: 12px;
     padding: 15.2px 24px;
-    margin: 30px 0;
+    margin: 19.200px 0;
     transition: background-color .3s ease;
     box-shadow: 0 0.875rem 1.75rem rgba(31, 47, 86, 0.13), 0 0.625rem 0.625rem rgba(31, 47, 86, 0.18);
 }
